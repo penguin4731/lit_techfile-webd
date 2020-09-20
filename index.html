@@ -3,107 +3,133 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>My Web Site</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+    <!--fullpage.js-->
+    <link rel="stylesheet" type="text/css" href="src/fullpage.css">
+    <script src="src/fullpage.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    </script>
+    <script src="contents.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div class="wrapper">
-            <h1>My Web Site</h1>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Top</a></li>
-                    <li><a href="#content1">Profile</a></li>
-                    <li><a href="#content2">University</a></li>
-                    <li><a href="#content3">Leaders</a></li>
-                    <li><a href="#content4">Hobby</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div id="header" class="main">
+            <h1>GASSI</h1>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#content0">Top</a></li>
+                        <li><a href="#content1">Profile</a></li>
+                        <li><a href="#content2">University</a></li>
+                        <li><a href="#content3">Leaders</a></li>
+                        <li><a href="#content4">Hobby</a></li>
+                        <li><a href="#content5">Technology</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-    <div class="main-visual">
+    </header>
+    <nav id="menu"></nav>
+    <div id="fullpage">
+        <div class="section top" id="content0">
+            <div class="image">
+                <img src="hero 2.jpg">
+            </div>
+            <h1>YO HIGASHIDA</h1>
+        </div>
 
-    </div>
-    <div class="wrapper">
-        <div id="main">
-            <div class="content" id="content1">
-                <h1 class="top-title">My Profile</h1>
-                <div class="dissolve-animation">
-                    <img src="main.jpg" alt="" width="300">
-                    <div class="caption">
-                        <h2>2020, 08, 30</h2>
-                        <h3>大阪キャンプ C日程</h3>
-                    </div>
-                </div>
-                <div class="right-box">
-                    <h2>がっしー</h2>
+        <!--Profile-->
+        <div class="section content" id="content1">
+            <div class="main">
+                <img src="main.jpg" style="float: left;">
+                <div class="box left">
+                    <h2>PROFILE</h2>
+                    <h1>がっしー</h1>
                     <p>12期のがっしーです！<br>大阪生まれの関西メンターです。</p>
-                    <a href="https://www.facebook.com/yohigashida" class="fbbutton" target="_blank">Facebook
-                        <span class="edge edge1"></span>
-                        <span class="edge edge2"></span>
-                        <span class="edge edge3"></span>
-                        <span class="edge edge4"></span>
-                    </a>
+                    <a href="#" class="btn-flat-border">Facebook</a>
                 </div>
             </div>
+        </div>
 
-            <div class="content" id="content2">
-                <h1 class="top-title">大学</h1>
-                <div class="left-box">
-                    <h2>立命館大学</h2>
+        <!--University-->
+        <div class="section content" id="content2">
+            <div class="main">
+                <div class="box right">
+                    <h2>UNIVERSITY</h2>
+                    <h1>立命館大学</h1>
                     <p>立命館大学 情報理工学部 先端社会デザインコースの1回生です。</p>
-                    <!--Facebook-->
-                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fritsumeikanuniversity&width=168&layout=button_count&action=like&size=small&share=true&height=46&appId=565906740624769" width="168" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                    <!--Twitter-->
-                    <a href="https://twitter.com/Ritsumeikan_PR?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Ritsumeikan_PR</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="#" class="btn-flat-border">Offical Web</a>
                 </div>
                 <!--Google Map-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.9795013116195!2d135.9610467156121!3d34.982178180363135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60016dc10d85ceb9%3A0x485ed8a073a5328b!2z56uL5ZG96aSo5aSn5a2mIOOBs-OCj-OBk-ODu-OBj-OBleOBpOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1599912121471!5m2!1sja!2sjp" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.9795013116195!2d135.9610467156121!3d34.982178180363135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60016dc10d85ceb9%3A0x485ed8a073a5328b!2z56uL5ZG96aSo5aSn5a2mIOOBs-OCj-OBk-ODu-OBj-OBleOBpOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1599912121471!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0; float: left;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
+        </div>
 
-            <div class="content" id="content3">
-                <h1 class="top-title">Leaders</h1>
+        <!--Leaders-->
+        <div class="section content" id="content3">
+            <div class="main">
                 <!--Youtube-->
-                <iframe width="300" height="200" style="float: left;" src="https://www.youtube.com/embed/TZTz4RiGGo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!--                <img src="tech.jpg" alt="" width="300">-->
-                <div class="right-box">
-                    <h2>Webサービスコース</h2>
+                <iframe width="400" height="300" style="float: left;" src="https://www.youtube.com/embed/TZTz4RiGGo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="box left">
+                    <h2>Leaders</h2>
+                    <h1>WebSコース</h1>
                     <p>Rubyという言語を用いて、オリジナルのWebサービスをリリースするコースです。</p>
                 </div>
             </div>
-            
-            <div class="content" id="content4">
-                <h1 class="top-title">趣味</h1>
-                <div class="left-box">
-                    <h2>紅茶</h2>
-                    <p>様々な紅茶を飲みくらべています。疲れているときに飲むと生き返ります。<br>最近は、T2という紅茶専門店で購入してます。</p>
+        </div>
+
+        <!--HOBBY-->
+        <div class="section content" id="content4">
+            <div class="main">
+                <div class="box right">
+                    <h2>HOBBY</h2>
+                    <h1>紅茶</h1>
+                    <p>様々な紅茶を飲みくらべています。疲れているときに飲むと生き返ります。</p>
                 </div>
-                <div class="flip-animation">
-                    <img src="like.jpg" alt="" width="300">
-                    <div class="caption">
-                        <h2>紅茶専門店</h2>
-                        <h3>T2</h3>
-                    </div>
+                <img src="like.jpg" width="400" style="float: left;">
+            </div>
+        </div>
+
+        <!--TECH-->
+        <div class="section content" id="content5">
+            <div class="main">
+               <h2 style="text-align: center;padding-bottom: 20px;">TECHNOLOGY</h2>
+                <div class="techBox">
+                    <img src="ruby.svg">
+                    <h2>Ruby + Sinatra</h2>
+                    <p>たった5行でWebサービスを開始できるフレームワーク！</p>
+                </div>
+                <div class="techBox">
+                    <img src="line.svg">
+                    <h2>LINE</h2>
+                    <p>意外と簡単に実装できるLINE BotとLINEログイン。</p>
+                </div>
+                <div class="techBox">
+                    <img src="firebase.svg">
+                    <h2>Firebase</h2>
+                    <p>ログインもデータベースもこれだけでできてしまう。</p>
                 </div>
             </div>
         </div>
-        <div id="sidebar">
-            <img src="sinatra.jpg" alt="" width="280">
-            <h3>Ruby + Sinatra</h3>
-            <p>たった5行でWebサービスを開始できるフレームワーク！</p>
-        </div>
-        <div id="sidebar">
-            <img src="line.jpg" alt="" width="280">
-            <h3>LINE</h3>
-            <p>意外と簡単に実装できるLINE BotとLINEログイン。</p>
-        </div>
-        <div id="sidebar">
-            <img src="firebase.jpg" alt="" width="280">
-            <h3>Firebase</h3>
-            <p>とにかく使い勝手が良すぎるBaas！ログインもデータベースもこれだけでできてしまう。</p>
-        </div>
     </div>
-</body></html>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(false);
+
+    </script>
+</body>
+
+</html>
