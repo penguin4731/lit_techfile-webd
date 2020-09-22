@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Futura-Medium';
+    src: local("fonts/Futura-Lig.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rbga(186, 213, 245, 0.3);
+    font-family: 'Hiragino Kaku Gothic pro w3';
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+section h1 {
+    color: #3d5cdb;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Futura-Medium';
+}
+
+section a {
+    font-family: 'Hiragino Kaku Gothic pro w6';
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/*nav----------------------------------*/
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    margin-right: 60px;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    margin-top: 35px;
+}
+
+nav a{
+    font-family: 'Futura-Medium';
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 22px;
+    color: #fff;
+}
+
+/*top----------------------------------*/
+#top {
+    height: 100vh;
+}
+
+#top .bx-wrapper {
+    margin: 0 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#top .bx-viewport {
+    height: 100vh !important;
+}
+
+#top .bx-wrapper img {
+    height: 100vh !important;
+    object-fit: cover;
+}
+
+#top{
+    position: relative;
+}
+
+#top .title{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 900px;
+    height: 320px;
+}
+
+#top .title img{
+    width: 900px;
+    padding-bottom: 40px;
+}
+
+#top .title h1{
+    color: #fff;
+    font-size: 38px;
+    font-style: italic;
+}
+
+/*Introduction-------------------------*/
+
+
+.box .content {
+    width: 400px;
+    padding: 50px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.box p {
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.box img {
+    width: 500px;
+    padding: 50px;
+}
+
+.box a {
+    font-size: 20px;
+    padding: 10px 50px;
+}
+
+/*box1---------*/
+
+.box1 img {
+    float: left;
+}
+
+.box1 a {
+    background-color: #3d5cdb;
+}
+
+/*box2---------*/
+.box2 .content {
+    float: left;
+}
+
+.box2 a {
+    background-color: #ffbf00;
+}
+
+/*Courses-------------------------*/
+#courses {
+    background-color: #434343;
+    padding: 45px;
+}
+
+#courses .main {
+    padding: 60px 0;
+}
+
+.course {
+    width: 240px;
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    padding-bottom: 45px;
+    margin: 10px;
+    float: left;
+}
+
+.course img {
+    height: 150px;
+    padding: 35px;
+}
+
+.course p {
+    font-family: 'Hiragino Kaku Gothic pro w6';
+    font-size: 14px;
+    padding-bottom: 30px;
+    color: #333333;
+}
+
+.course a {
+    padding: 15px 30px;
+    font-size: 12px;
+    background-color: #555555;
+}
+
+/*Images---------------------------*/
+#slick .bx-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*footer---------------------------*/
+footer p {
+    text-align: center;
+    color: #3d5cdb;
+    padding: 25px;
+    font-family: 'Hiragino Kaku Gothic pro w6';
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="plugin/jquery.bxslider.css">
+    <script src="plugin/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.topSlider').bxSlider({
+                mode: 'fade',
+                auto: true,
+                controller: false,
+                pager: false,
+            });
+        });
+
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                auto: true,
+                minSlides: 1,
+                maxSlides: 4,
+                moveSlides: 1,
+                slideWidth: 275,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#slick">Images</a></li>
+                <li><a href="#access">Access</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--top-->
+    <section id="top">
+        <div class="topSlider">
+            <img src="images/hero.jpg" alt="">
+            <img src="images/background2.jpg" alt="">
+            <img src="images/background3.jpg" alt="">
+            <img src="images/background4.jpg" alt="">
+            <img src="images/background5.jpg" alt="">
+        </div>
+        <div class="title">
+            <img src="images/logo.png" alt="">
+            <h1>We are Web Designers.</h1>
+        </div>
+    </section>
+    
+    <!--Introduction-->
+    <section id="introduction">
+        <h1>Introduction</h1>
+        <div class="main">
+            <div class="box box1">
+                <img src="images/introduction_001.jpg">
+                <div class="content">
+                    <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。</p>
+                    <a href="#introduction">会員登録</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="box box2">
+                <div class="content">
+                    <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
+                    <a href="#introduction">会員登録</a>
+                </div>
+                <img src="images/introduction_002.jpg">
+            </div>
+        </div>
+    </section>
+    <!--Courses-->
+    <section id="courses">
+        <h1>Courses</h1>
+        <div class="main">
+            <div class="course html">
+                <img src="images/html.png" alt="">
+                <p>HTMLコース</p>
+                <a href="#courses">このコースを受ける</a>
+            </div>
+            <div class="course css">
+                <img src="images/css.png" alt="">
+                <p>CSSコース</p>
+                <a href="#courses">このコースを受ける</a>
+            </div>
+            <div class="course unity">
+                <img src="images/unity.png" alt="">
+                <p>Unityコース</p>
+                <a href="#courses">このコースを受ける</a>
+            </div>
+            <div class="course ruby">
+                <img src="images/ruby.png" alt="">
+                <p>Rubyコース</p>
+                <a href="#courses">このコースを受ける</a>
+            </div>
+            <div class="course js">
+                <img src="images/js.png" alt="">
+                <p>JavaScriptコース</p>
+                <a href="#courses">このコースを受ける</a>
+            </div>
+            <div class="course swift">
+                <img src="images/swift.png" alt="">
+                <p>Swiftコース</p>
+                <a href="#courses">このコースを受ける</a>
+            </div>
+            <div class="course go">
+                <img src="images/go.png" alt="">
+                <p>Goコース</p>
+                <a href="#courses">このコースを受ける</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <!--Images-->
+    <section id="slick">
+        <h1>Images</h1>
+        <div class="slider">
+            <img src="images/hero.jpg" alt="">
+            <img src="images/background2.jpg" alt="">
+            <img src="images/background3.jpg" alt="">
+            <img src="images/background4.jpg" alt="">
+            <img src="images/background5.jpg" alt="">
+        </div>
+    </section>
+
+
+    <!--Access-->
+    <section id="access">
+        <h1>Access</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.6262797845075!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600793806496!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;padding: 45px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <!--footer-->
+    <footer>
+        <p>&copy; 2019 Happy Hack Inc.</p>
+    </footer>
+</body></html>
