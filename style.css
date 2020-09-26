@@ -14,8 +14,9 @@ body {
     font-weight: 100;
 }
 
-p{
-    font-feature-settings: "palt" 1;
+p {
+    font-feature-settings: "palt"1;
+    color: #333;
 }
 
 section {
@@ -37,6 +38,10 @@ section a {
     color: #fff;
     text-decoration: none;
     border-radius: 12px;
+}
+
+section a:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main {
@@ -195,6 +200,8 @@ nav a:hover {
 .box {
     width: 1040px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .box .content {
@@ -204,6 +211,7 @@ nav a:hover {
     text-align: center;
     font-size: 16px;
     line-height: 32px;
+    padding-bottom: 15px;
 }
 
 .box p {
@@ -221,22 +229,9 @@ nav a:hover {
     padding: 10px 50px;
 }
 
-.ls6 {
-    letter-spacing: -6px;
-}
-
-.ls12 {
-    letter-spacing: -9px;
-}
-
-
 /*box1---------*/
-
-.box1 {}
-
-.box1 img {
-    float: left;
-    padding-bottom: 90px;
+.box1 {
+    margin-bottom: 90px;
 }
 
 .box1 a {
@@ -249,10 +244,6 @@ nav a:hover {
 }
 
 /*box2---------*/
-.box2 .content {
-    float: left;
-}
-
 .box2 a {
     background-color: #ffbf00;
 }
@@ -270,6 +261,7 @@ nav a:hover {
     text-align: center;
     padding-bottom: 45px;
     margin: 0px 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
 }
 
 .course img {
@@ -283,7 +275,7 @@ nav a:hover {
     font-family: 'Hiragino Kaku Gothic pro w6';
     font-size: 14px;
     padding-bottom: 30px;
-    color: #333333;
+    color: #2e4767;
 }
 
 .course a {
@@ -325,6 +317,35 @@ nav a:hover {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+/*color*/
+.html a{
+    background-color: #e16e3c;
+}
+
+.css a{
+    background-color: #52a8da;
+}
+
+.unity a{
+    background-color: #333333;
+}
+
+.ruby a{
+    background-color: #ed5f59;
+}
+
+.js a{
+    background-color: #f9d749;
+}
+
+.swift a{
+    background-color: #ee7c47;
+}
+
+.go a{
+    background-color: #8acddb;
 }
 
 /*Images---------------------------*/
