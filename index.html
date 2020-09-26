@@ -10,6 +10,9 @@
     <!--bxSlider-->
     <link rel="stylesheet" href="plugin/jquery.bxslider.css">
     <script src="plugin/jquery.bxslider.js"></script>
+    <!--particles-->
+    <script src="plugin/particles.js"></script>
+    <script src="plugin/app.js"></script>
 
     <!--slick-->
     <link href="plugin/slick-theme.css" rel="stylesheet" type="text/css">
@@ -23,19 +26,7 @@
                 controls: false,
                 pager: false,
             });
-        });
 
-        //        $(document).ready(function() {
-        //            $('.slider').bxSlider({
-        //                auto: true,
-        //                minSlides: 1,
-        //                maxSlides: 4,
-        //                moveSlides: 1,
-        //                slideWidth: 275,
-        //            });
-        //        });
-
-        $(document).ready(function() {
             $('.slider').slick({
                 autoplay: true,
                 autoplaySpeed: 5000,
@@ -43,10 +34,7 @@
                 slidesToShow: 4,
                 slidesToScroll: 1
             });
-        });
 
-
-        $(document).ready(function() {
             $('.fuwat').css('visibility', 'hidden');
             $(window).scroll(function() {
                 var windowHeight = $(window).height(),
@@ -67,7 +55,7 @@
         <nav>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#courses">Courses</a></li>
+                <li><a href="#particles-js">Courses</a></li>
                 <li><a href="#slick">Images</a></li>
                 <li><a href="#access">Access</a></li>
             </ul>
@@ -110,50 +98,54 @@
         </div>
     </section>
     <!--Courses-->
-    <section id="courses" class="fuwat">
-        <h1>Courses</h1>
-        <div class="main">
-            <div class="column1">
-                <div class="course html">
-                    <img src="images/html.png" alt="">
-                    <p>HTMLコース</p>
-                    <a href="#courses">このコースを受ける</a>
+    <section id="courses" class="fuwat particles-js">
+        <div class="courses">
+            <h1>Courses</h1>
+            <div class="main">
+                <div class="column mb30">
+                    <div class="course html">
+                        <img src="images/html.png" alt="">
+                        <p>HTMLコース</p>
+                        <a href="#courses">このコースを受ける</a>
+                    </div>
+                    <div class="course css">
+                        <img src="images/css.png" alt="">
+                        <p>CSSコース</p>
+                        <a href="#courses">このコースを受ける</a>
+                    </div>
+                    <div class="course unity">
+                        <img src="images/unity.png" alt="">
+                        <p>Unityコース</p>
+                        <a href="#courses">このコースを受ける</a>
+                    </div>
+                    <div class="course ruby">
+                        <img src="images/ruby.png" alt="">
+                        <p>Rubyコース</p>
+                        <a href="#courses">このコースを受ける</a>
+                    </div>
                 </div>
-                <div class="course css">
-                    <img src="images/css.png" alt="">
-                    <p>CSSコース</p>
-                    <a href="#courses">このコースを受ける</a>
-                </div>
-                <div class="course unity">
-                    <img src="images/unity.png" alt="">
-                    <p>Unityコース</p>
-                    <a href="#courses">このコースを受ける</a>
-                </div>
-                <div class="course ruby">
-                    <img src="images/ruby.png" alt="">
-                    <p>Rubyコース</p>
-                    <a href="#courses">このコースを受ける</a>
+                <div class="column">
+                    <div class="course js">
+                        <img src="images/js.png" alt="">
+                        <p>JavaScriptコース</p>
+                        <a href="#courses">このコースを受ける</a>
+                    </div>
+                    <div class="course swift">
+                        <img src="images/swift.png" alt="">
+                        <p>Swiftコース</p>
+                        <a href="#courses">このコースを受ける</a>
+                    </div>
+                    <div class="course go">
+                        <img src="images/go.png" alt="">
+                        <p>Goコース</p>
+                        <a href="#courses">このコースを受ける</a>
+                    </div>
                 </div>
             </div>
-            <div class="column2">
-                <div class="course js">
-                    <img src="images/js.png" alt="">
-                    <p>JavaScriptコース</p>
-                    <a href="#courses">このコースを受ける</a>
-                </div>
-                <div class="course swift">
-                    <img src="images/swift.png" alt="">
-                    <p>Swiftコース</p>
-                    <a href="#courses">このコースを受ける</a>
-                </div>
-                <div class="course go">
-                    <img src="images/go.png" alt="">
-                    <p>Goコース</p>
-                    <a href="#courses">このコースを受ける</a>
-                </div>
-            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
+        <div id="particles-js"></div>
+<!--        <div class="test"></div>-->
     </section>
     <!--Images-->
     <section id="slick" class="fuwat">
@@ -179,4 +171,9 @@
     <footer>
         <p>&copy; 2019 Happy Hack Inc.</p>
     </footer>
+
+    <!-- scripts -->
+    <script src="plugin/particles.js"></script>
+    <script src="plugin/app.js"></script>
+
 </body></html>
