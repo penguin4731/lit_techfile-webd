@@ -12,10 +12,10 @@ body {
     background-color: rbga(186, 213, 245, 0.3);
     font-family: 'Hiragino Kaku Gothic pro w3';
     font-weight: 100;
+    font-feature-settings: "palt"1;
 }
 
 p {
-    font-feature-settings: "palt"1;
     color: #333;
 }
 
@@ -40,12 +40,12 @@ section a {
     border-radius: 12px;
 }
 
-section a:hover{
+section a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main {
-    width: 1100px;
+    width: 100%;
     height: auto;
     display: inline-block;
     margin: 0 auto;
@@ -54,6 +54,16 @@ section a:hover{
 
 .clear {
     clear: both;
+}
+
+@media screen and (max-width:479px) {
+    section h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        padding-top: 20px;
+    }
 }
 
 /*フワッと*/
@@ -143,6 +153,12 @@ nav a:hover {
     color: #3d5cdb;
 }
 
+@media screen and (max-width:479px) {
+    nav {
+        display: none;
+    }
+}
+
 /*top----------------------------------*/
 #top {
     height: 100vh;
@@ -185,7 +201,7 @@ nav a:hover {
 }
 
 #top .title img {
-    width: 900px;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -195,6 +211,26 @@ nav a:hover {
     font-style: italic;
 }
 
+@media screen and (max-width:479px) {
+    #top .title {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top .title h1 {
+        font-size: 16px;
+        margin-top: 20px;
+        padding-top: 0;
+    }
+
+    #top .title img {
+        margin-bottom: 0px;
+    }
+}
+
 /*Introduction-------------------------*/
 
 .box {
@@ -202,16 +238,16 @@ nav a:hover {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .box .content {
     width: 400px;
-    overflow: hidden;
-    display: inline-block;
     text-align: center;
     font-size: 16px;
     line-height: 32px;
     padding-bottom: 15px;
+    margin: 0px 50px;
 }
 
 .box p {
@@ -220,8 +256,12 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-.box img {
+.box .image {
     width: 500px;
+}
+
+.box .image img {
+    width: 100%;
 }
 
 .box a {
@@ -244,6 +284,10 @@ nav a:hover {
 }
 
 /*box2---------*/
+.box2 {
+    flex-direction: row-reverse;
+}
+
 .box2 a {
     background-color: #ffbf00;
 }
@@ -253,6 +297,27 @@ nav a:hover {
     margin-left: 50px;
 }
 
+/*media---------*/
+
+@media screen and (max-width:479px) {
+    .box {
+        width: 100vw;
+    }
+
+    .box .image {
+        margin: 20px;
+    }
+
+    .box1 {
+        margin-bottom: 50px;
+    }
+
+    .box1 .content,
+    .box2 .content {
+        margin: 20px;
+    }
+}
+
 /*Courses-------------------------*/
 .course {
     width: 240px;
@@ -260,8 +325,8 @@ nav a:hover {
     border-radius: 12px;
     text-align: center;
     padding-bottom: 45px;
-    margin: 0px 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    margin: 30px 10px 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 .course img {
@@ -284,13 +349,12 @@ nav a:hover {
     background-color: #555555;
 }
 
-.column {
+.courses .main {
+    width: 1040px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.mb30 .course {
-    margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 #courses {
@@ -319,32 +383,62 @@ nav a:hover {
     right: 0;
 }
 
+@media screen and (max-width:479px) {
+    .courses .main {
+        width: 100vw;
+        padding-top: 10px;
+    }
+
+    .course {
+        width: 160px;
+        padding-bottom: 30px;
+    }
+
+    .course img {
+        width: 70px;
+        height: 70px;
+        padding: 30px 30px 20px 30px;
+    }
+
+    .course p {
+        font-size: 10px;
+    }
+
+    .course a {
+        font-size: 10px;
+        padding: 12px 6px;
+        border-radius: 25px;
+        margin: 30px 0px;
+        width: 70px;
+    }
+}
+
 /*color*/
-.html a{
+.html a {
     background-color: #e16e3c;
 }
 
-.css a{
+.css a {
     background-color: #52a8da;
 }
 
-.unity a{
+.unity a {
     background-color: #333333;
 }
 
-.ruby a{
+.ruby a {
     background-color: #ed5f59;
 }
 
-.js a{
+.js a {
     background-color: #f9d749;
 }
 
-.swift a{
+.swift a {
     background-color: #ee7c47;
 }
 
-.go a{
+.go a {
     background-color: #8acddb;
 }
 
@@ -352,6 +446,25 @@ nav a:hover {
 #slick .bx-wrapper {
     width: 1100px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:479px) {
+    .slider {
+        margin-top: 40px;
+    }
+}
+
+/*Access---------------------------*/
+#access .main iframe {
+    width: 600px;
+    height: 400px;
+}
+
+@media screen and (max-width:479px) {
+    #access .main iframe {
+        width: 100vw;
+        height: 280px;
+    }
 }
 
 /*footer---------------------------*/

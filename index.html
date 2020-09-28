@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Happy Hack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -27,13 +28,23 @@
                 pager: false,
             });
 
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 5000,
-                dots: true,
-                slidesToShow: 4,
-                slidesToScroll: 1
-            });
+            if (window.outerWidth <= 479) {
+                $('.slider').slick({
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            } else {
+                $('.slider').slick({
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    dots: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                });
+            }
 
             $('.fuwat').css('visibility', 'hidden');
             $(window).scroll(function() {
@@ -81,7 +92,9 @@
         <h1>Introduction</h1>
         <div class="main">
             <div class="box box1">
-                <img src="images/introduction_001.jpg">
+                <div class="image">
+                    <img src="images/introduction_001.jpg">
+                </div>
                 <div class="content">
                     <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています｡<br>特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています｡<br>誰でも最初は初心者｡それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます｡</p>
                     <a href="#introduction">会員登録</a>
@@ -89,11 +102,13 @@
             </div>
             <div class="clear"></div>
             <div class="box box2">
+                <div class="image">
+                    <img src="images/introduction_002.jpg">
+                </div>
                 <div class="content">
                     <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます｡コースは全部で7つ準備をしています｡<br>WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます｡<br>自分の想いをカタチにして発信することをぜひこの場で体験してみてください｡世界が変わって見えるかもしれません｡</p>
                     <a href="#introduction">会員登録</a>
                 </div>
-                <img src="images/introduction_002.jpg">
             </div>
         </div>
     </section>
@@ -102,49 +117,47 @@
         <div class="courses">
             <h1>Courses</h1>
             <div class="main">
-                <div class="column mb30">
-                    <div class="course html">
-                        <img src="images/html.png" alt="">
-                        <p>HTMLコース</p>
-                        <a href="#courses">このコースを受ける</a>
-                    </div>
-                    <div class="course css">
-                        <img src="images/css.png" alt="">
-                        <p>CSSコース</p>
-                        <a href="#courses">このコースを受ける</a>
-                    </div>
-                    <div class="course unity">
-                        <img src="images/unity.png" alt="">
-                        <p>Unityコース</p>
-                        <a href="#courses">このコースを受ける</a>
-                    </div>
-                    <div class="course ruby">
-                        <img src="images/ruby.png" alt="">
-                        <p>Rubyコース</p>
-                        <a href="#courses">このコースを受ける</a>
-                    </div>
+                <div class="course html">
+                    <img src="images/html.png" alt="">
+                    <p>HTMLコース</p>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
-                <div class="column">
-                    <div class="course js">
-                        <img src="images/js.png" alt="">
-                        <p>JavaScriptコース</p>
-                        <a href="#courses">このコースを受ける</a>
-                    </div>
-                    <div class="course swift">
-                        <img src="images/swift.png" alt="">
-                        <p>Swiftコース</p>
-                        <a href="#courses">このコースを受ける</a>
-                    </div>
-                    <div class="course go">
-                        <img src="images/go.png" alt="">
-                        <p>Goコース</p>
-                        <a href="#courses">このコースを受ける</a>
-                    </div>
+                <div class="course css">
+                    <img src="images/css.png" alt="">
+                    <p>CSSコース</p>
+                    <a href="#courses">このコースを受ける</a>
                 </div>
+                <div class="course unity">
+                    <img src="images/unity.png" alt="">
+                    <p>Unityコース</p>
+                    <a href="#courses">このコースを受ける</a>
+                </div>
+                <div class="course ruby">
+                    <img src="images/ruby.png" alt="">
+                    <p>Rubyコース</p>
+                    <a href="#courses">このコースを受ける</a>
+                </div>
+
+                <div class="course js">
+                    <img src="images/js.png" alt="">
+                    <p>JavaScriptコース</p>
+                    <a href="#courses">このコースを受ける</a>
+                </div>
+                <div class="course swift">
+                    <img src="images/swift.png" alt="">
+                    <p>Swiftコース</p>
+                    <a href="#courses">このコースを受ける</a>
+                </div>
+                <div class="course go">
+                    <img src="images/go.png" alt="">
+                    <p>Goコース</p>
+                    <a href="#courses">このコースを受ける</a>
+                </div>
+
             </div>
         </div>
         <div id="particles-js"></div>
-<!--        <div class="test"></div>-->
+        <!--        <div class="test"></div>-->
     </section>
     <!--Images-->
     <section id="slick" class="fuwat">
@@ -163,7 +176,7 @@
     <section id="access" class="fuwat">
         <h1>Access</h1>
         <div class="main">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.6262797845075!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600793806496!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.6262797845075!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600793806496!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </section>
     <!--footer-->
