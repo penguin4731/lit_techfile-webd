@@ -1,135 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Yo Higashida</title>
+		<link rel="stylesheet" href="css/style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+		<!--font-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!--font-->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+		<!--fullpage.js-->
+		<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+		<script src="js/fullpage.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/contents.js"></script>
+	</head>
 
-    <!--fullpage.js-->
-    <link rel="stylesheet" type="text/css" href="src/fullpage.css">
-    <script src="src/fullpage.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-    </script>
-    <script src="contents.js"></script>
-</head>
+	<body>
+		<header>
+			<div id="header" class="main">
+				<h1>GASSI</h1>
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="#content0">Top</a></li>
+							<li><a href="#content1">Profile</a></li>
+							<li><a href="#content2">University</a></li>
+							<li><a href="#content3">Leaders</a></li>
+							<li><a href="#content4">Hobby</a></li>
+							<li><a href="#content5">Technology</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<nav id="menu"></nav>
+		<div id="fullpage">
+			<div class="section top" id="content0">
+				<div class="image">
+					<img src="hero.jpg" />
+				</div>
+				<h1>YO HIGASHIDA</h1>
+			</div>
 
-<body>
-    <header>
-        <div id="header" class="main">
-            <h1>GASSI</h1>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#content0">Top</a></li>
-                        <li><a href="#content1">Profile</a></li>
-                        <li><a href="#content2">University</a></li>
-                        <li><a href="#content3">Leaders</a></li>
-                        <li><a href="#content4">Hobby</a></li>
-                        <li><a href="#content5">Technology</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <nav id="menu"></nav>
-    <div id="fullpage">
-        <div class="section top" id="content0">
-            <div class="image">
-                <img src="hero.jpg">
-            </div>
-            <h1>YO HIGASHIDA</h1>
-        </div>
+			<!--Profile-->
+			<div class="section content" id="content1">
+				<div class="main">
+					<img src="main.jpg" style="float: left" />
+					<div class="box left">
+						<h2>PROFILE</h2>
+						<h1>がっしー</h1>
+						<p>12期のがっしーです！<br />大阪生まれの関西メンターです。</p>
+						<a href="#" class="btn-flat-border">Facebook</a>
+					</div>
+				</div>
+			</div>
 
-        <!--Profile-->
-        <div class="section content" id="content1">
-            <div class="main">
-                <img src="main.jpg" style="float: left;">
-                <div class="box left">
-                    <h2>PROFILE</h2>
-                    <h1>がっしー</h1>
-                    <p>12期のがっしーです！<br>大阪生まれの関西メンターです。</p>
-                    <a href="#" class="btn-flat-border">Facebook</a>
-                </div>
-            </div>
-        </div>
+			<!--University-->
+			<div class="section content" id="content2">
+				<div class="main">
+					<div class="box right">
+						<h2>UNIVERSITY</h2>
+						<h1>立命館大学</h1>
+						<p>立命館大学 情報理工学部 先端社会デザインコースの1回生です。</p>
+						<a href="#" class="btn-flat-border">Offical Web</a>
+					</div>
+					<!--Google Map-->
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.9795013116195!2d135.9610467156121!3d34.982178180363135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60016dc10d85ceb9%3A0x485ed8a073a5328b!2z56uL5ZG96aSo5aSn5a2mIOOBs-OCj-OBk-ODu-OBj-OBleOBpOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1599912121471!5m2!1sja!2sjp"
+						width="400"
+						height="300"
+						frameborder="0"
+						style="border: 0; float: left"
+						allowfullscreen=""
+						aria-hidden="false"
+						tabindex="0"
+					></iframe>
+				</div>
+			</div>
 
-        <!--University-->
-        <div class="section content" id="content2">
-            <div class="main">
-                <div class="box right">
-                    <h2>UNIVERSITY</h2>
-                    <h1>立命館大学</h1>
-                    <p>立命館大学 情報理工学部 先端社会デザインコースの1回生です。</p>
-                    <a href="#" class="btn-flat-border">Offical Web</a>
-                </div>
-                <!--Google Map-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.9795013116195!2d135.9610467156121!3d34.982178180363135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60016dc10d85ceb9%3A0x485ed8a073a5328b!2z56uL5ZG96aSo5aSn5a2mIOOBs-OCj-OBk-ODu-OBj-OBleOBpOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1599912121471!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0; float: left;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </div>
+			<!--Leaders-->
+			<div class="section content" id="content3">
+				<div class="main">
+					<!--Youtube-->
+					<iframe
+						width="400"
+						height="300"
+						style="float: left"
+						src="https://www.youtube.com/embed/TZTz4RiGGo8"
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+					<div class="box left">
+						<h2>Leaders</h2>
+						<h1>WebSコース</h1>
+						<p>
+							Rubyという言語を用いて、オリジナルのWebサービスをリリースするコースです。
+						</p>
+					</div>
+				</div>
+			</div>
 
-        <!--Leaders-->
-        <div class="section content" id="content3">
-            <div class="main">
-                <!--Youtube-->
-                <iframe width="400" height="300" style="float: left;" src="https://www.youtube.com/embed/TZTz4RiGGo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="box left">
-                    <h2>Leaders</h2>
-                    <h1>WebSコース</h1>
-                    <p>Rubyという言語を用いて、オリジナルのWebサービスをリリースするコースです。</p>
-                </div>
-            </div>
-        </div>
+			<!--HOBBY-->
+			<div class="section content" id="content4">
+				<div class="main">
+					<div class="box right">
+						<h2>HOBBY</h2>
+						<h1>紅茶</h1>
+						<p>
+							様々な紅茶を飲みくらべています。疲れているときに飲むと生き返ります。
+						</p>
+					</div>
+					<img src="like.jpg" width="400" style="float: left" />
+				</div>
+			</div>
 
-        <!--HOBBY-->
-        <div class="section content" id="content4">
-            <div class="main">
-                <div class="box right">
-                    <h2>HOBBY</h2>
-                    <h1>紅茶</h1>
-                    <p>様々な紅茶を飲みくらべています。疲れているときに飲むと生き返ります。</p>
-                </div>
-                <img src="like.jpg" width="400" style="float: left;">
-            </div>
-        </div>
+			<!--TECH-->
+			<div class="section content" id="content5">
+				<div class="main">
+					<h2 style="text-align: center; padding-bottom: 20px">TECHNOLOGY</h2>
+					<div class="techBox">
+						<img src="ruby.svg" />
+						<h2>Ruby + Sinatra</h2>
+						<p>たった5行でWebサービスを開始できるフレームワーク！</p>
+					</div>
+					<div class="techBox">
+						<img src="line.svg" />
+						<h2>LINE</h2>
+						<p>意外と簡単に実装できるLINE BotとLINEログイン。</p>
+					</div>
+					<div class="techBox">
+						<img src="firebase.svg" />
+						<h2>Firebase</h2>
+						<p>ログインもデータベースもこれだけでできてしまう。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			new fullpage("#fullpage", {
+				//options here
+				autoScrolling: true,
+				scrollHorizontally: true,
+			});
 
-        <!--TECH-->
-        <div class="section content" id="content5">
-            <div class="main">
-               <h2 style="text-align: center;padding-bottom: 20px;">TECHNOLOGY</h2>
-                <div class="techBox">
-                    <img src="ruby.svg">
-                    <h2>Ruby + Sinatra</h2>
-                    <p>たった5行でWebサービスを開始できるフレームワーク！</p>
-                </div>
-                <div class="techBox">
-                    <img src="line.svg">
-                    <h2>LINE</h2>
-                    <p>意外と簡単に実装できるLINE BotとLINEログイン。</p>
-                </div>
-                <div class="techBox">
-                    <img src="firebase.svg">
-                    <h2>Firebase</h2>
-                    <p>ログインもデータベースもこれだけでできてしまう。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        new fullpage('#fullpage', {
-            //options here
-            autoScrolling: true,
-            scrollHorizontally: true
-        });
-
-        //methods
-        fullpage_api.setAllowScrolling(false);
-
-    </script>
-</body>
-
+			//methods
+			fullpage_api.setAllowScrolling(false);
+		</script>
+	</body>
 </html>
