@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #00081A;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*nav------------------*/
+
+header {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 30px 0px;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+#header h1 {
+    font-size: 30px;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+    margin-top: 2px;
+}
+
+nav a {
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    color: #f9f9f9;
+    margin: 14px 16px 0px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #f9f9f9;
+}
+
+/*top------------------*/
+.top {
+    position: relative;
+}
+
+.top h1 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 960px;
+    height: 3.2rem;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.top .image {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top .image img {
+    overflow: hidden;
+    height: 100%;
+    margin: 100 100 100 100;
+}
+
+/*content------------------*/
+.content {
+    height: 100vh;
+    position: relative;
+}
+
+.main {
+    width: 960px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.left {
+    margin-left: 50px;
+}
+
+.right {
+    margin-right: 50px;
+}
+
+.box {
+    float: left;
+    width: 500px;
+    overflow: hidden;
+}
+
+.box h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.box h2 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.box p {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.btn-flat-border {
+    display: inline-block;
+    padding: 0.4em 0.5em;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 3px;
+    transition: .4s;
+    font-size: 25px;
+}
+
+.btn-flat-border:hover {
+    background: #3B5998;
+    border: solid 1px #00081A;
+}
+
+#content1 img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*techBox*/
+.techBox {
+    background-color: white;
+    float: left;
+    margin: 10px 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+.techBox img {
+    width: 50%;
+}
+
+.techBox h2 {
+    color: #454545;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.techBox p {
+    color: #454545;
+}
